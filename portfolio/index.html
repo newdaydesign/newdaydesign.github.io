@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO meta tags -->
+    <meta name="description" content="New Day Design's Portfolio">
+    <!-- <meta name="keywords" content="keyword1, keyword2, keyword3"> -->
+    
+    <!-- Social Media Open Graph Meta Tags -->
+    <meta property="og:title" content="New Day Design's Portfolio">
+    <meta property="og:description" content="New Day Design's Portfolio">
+    <!-- <meta property="og:image" content="URL_to_image"> -->
+    <!-- <meta property="og:url" content="https://yourwebsite.com/page-url"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/components.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/portfolio/portfolio.css">
+    
+    <!-- Common JS -->
+    <script src="/scripts/navigation.js" defer>
+        // Set current year in the footer dynamically
+        // document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Page JS -->   
+    <script src="/portfolio/portfolio.js" defer></script>
+
+    <title>Portfolio</title>
+
+</head>
+<body>
+    
+    <!-- Header section -->
+    <header class="main-header">
+        <div class="logo">
+            <div class="logo__circle --is-logo"></div>
+            <div class="logo__text --is-logo">NEW DAY DESIGN</div>
+            <div class="logo__underline"></div>
+            <div class="logo__burger-line-1"></div>
+            <div class="logo__burger-line-2"></div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/ourmodel">OUR MODEL</a></li>
+                <li><a href="/portfolio">PORTFOLIO</a></li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="dimmer"></div>
+    
+    <!-- Main content -->
+    <main>
+        <div class="hero">
+            <h1 class="portfolio-title">
+                PORTFOLIO
+            </h1>
+        </div>
+        <div class = 'portfolio'>
+            <div class = 'portfolio__item'>
+                <div class = 'portfolio__item-photo'>
+                    <img class = 'portfolio_item-photo-img'  src="/resources/mpp-screenshot.png">
+                </div>
+                <div class= 'portfolio__item_title'>
+                    Mindful Peak Performance
+                </div>
+            </div>
+            <div class = 'portfolio__item'>
+                <div class = 'portfolio__item-photo'>
+                    <img class = 'portfolio_item-photo-img' src="/resources/tmi-screenshot.png">
+                </div>
+                <div class='portfolio__item_title'>
+                    Innovations In Mindfulness
+                </div>
+            </div>
+            <div class = 'portfolio__item'>
+                <div class = 'portfolio__item-photo'>
+                    <img class = 'portfolio_item-photo-img' src="/resources/auzaaudio-screenshot.png">
+                </div>
+                <div class='portfolio__item_title'>
+                    Auza Audio
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <!-- Footer section -->
+    <!-- <footer>
+        <p>&copy; <span id="year"></span> Your Company Name. All rights reserved.</p>
+    </footer> -->
+</body>
+</html>
