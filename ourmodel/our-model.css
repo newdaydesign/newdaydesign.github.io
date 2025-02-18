@@ -12,7 +12,39 @@ main{
 
     background: radial-gradient(circle at center, rgb(247, 200, 153), rgb(194, 155, 170));
     transition: background 1s linear;
+    overflow: hidden;
 }
+
+.hero::after{
+  /* content is required when using :after */
+  content: "";
+  /* The animation */
+  animation: grain 12s steps(10) infinite;
+  /* The grainy image */
+  /* background-image: url("/resources/grain-1.png"); */
+  background-image: url("/resources/black-orchid.png");
+  /* Specify a height and width above and beyond the page header for movement */
+  height: 300%;
+  width: 300%;
+  /* We're using opacity in place of a transparent image */
+  opacity: 0.3;
+  /* We'll need this when the animation kicks in to hold the position of the texture */
+  position: absolute;
+  overflow: hidden;
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(0%, 5%) }
+    30% { transform:translate(-5%, -25%) }
+    40% { transform:translate(0%, 25%) }
+    50% { transform:translate(-5%, 10%) }
+    60% { transform:translate(0%, 0%) }
+    70% { transform:translate(-5%, 15%) }
+    80% { transform:translate(0%, 10%) }
+    90% { transform:translate(-55%, 10%) }
+  }
 
 .sun-rays{
     position: absolute;

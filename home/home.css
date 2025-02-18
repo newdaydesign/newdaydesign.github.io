@@ -1,0 +1,60 @@
+.home-bg-wrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-bg__noise-layer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(227, 222, 60), rgb(232, 167, 55) 40%, rgb(168, 94, 94));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-bg__noise-layer::after{
+    /* content is required when using :after */
+    content: "";
+    /* The animation */
+    animation: grain 12s steps(10) infinite;
+    /* The grainy image */
+    /* background-image: url("/resources/grain-1.png"); */
+    background-image: url("/resources/black-orchid.png");
+    /* Specify a height and width above and beyond the page header for movement */
+    height: 300%;
+    width: 300%;
+    /* We're using opacity in place of a transparent image */
+    opacity: 0.20;
+    /* We'll need this when the animation kicks in to hold the position of the texture */
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  @keyframes grain {
+      0%, 100% { transform:translate(0, 0) }
+      10% { transform:translate(-5%, -10%) }
+      20% { transform:translate(0%, 0%) }
+      30% { transform:translate(-5%, -5%) }
+      40% { transform:translate(0%, 0%) }
+      50% { transform:translate(-5%, -5%) }
+      60% { transform:translate(0%, 0%) }
+      70% { transform:translate(-5%, -5%) }
+      80% { transform:translate(0%, 0%) }
+      90% { transform:translate(-5%, -5%) }
+    }
+
+.home-bg__overlay {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    -webkit-mask-image: radial-gradient(circle 200px at center, transparent 0%, transparent 10%, white 250px);
+    mask-image: radial-gradient(circle 200px at center, transparent 0%, transparent 10%, white 250px);
+}
