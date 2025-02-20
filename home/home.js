@@ -7,7 +7,7 @@ let targetY = circleY;
 let circleSize = 10;  // Start very small on load
 let targetSize = 300;  // Default size after load
 
-const easeFactor = 0.08; // Movement smoothing
+const easeFactor = 0.05; // Movement smoothing
 const sizeEaseFactor = 0.01; // Size smoothing
 const maxSize = 400;  // Max size when moving
 const minSize = 300;  // Min size when idle
@@ -15,10 +15,10 @@ const minSize = 300;  // Min size when idle
 let lastMoveTime = Date.now();
 
 // Define movement boundaries (50% of screen width and height)
-const minX = window.innerWidth * 0.25;  // Left boundary (25%)
-const maxX = window.innerWidth * 0.75;  // Right boundary (75%)
-const minY = window.innerHeight * 0.25; // Top boundary (25%)
-const maxY = window.innerHeight * 0.75; // Bottom boundary (75%)
+const minX = window.innerWidth * 0.1;  // Left boundary (25%)
+const maxX = window.innerWidth * 0.9;  // Right boundary (75%)
+const minY = window.innerHeight * 0.1; // Top boundary (25%)
+const maxY = window.innerHeight * 0.9; // Bottom boundary (75%)
 
 // On mouse move, update target position and grow circle
 document.addEventListener("mousemove", (e) => {

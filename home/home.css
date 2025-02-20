@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'NeueMetana';
+    src: url('/resources/fonts/NeueMetana-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMetanaBold';
+    src: url('/resources/fonts/NeueMetana-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .home-bg-wrap {
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -27,7 +41,7 @@
     height: 300%;
     width: 300%;
     /* We're using opacity in place of a transparent image */
-    opacity: 0.20;
+    opacity: 0.25;
     /* We'll need this when the animation kicks in to hold the position of the texture */
     position: absolute;
     overflow: hidden;
@@ -49,7 +63,7 @@
 .home-bg__overlay {
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgb(239, 236, 236);
     position: absolute;
     z-index: 5;
     top: 0;
@@ -57,4 +71,34 @@
     opacity: 100%;
     -webkit-mask-image: radial-gradient(circle 200px at center, transparent 0%, transparent 10%, white 250px);
     mask-image: radial-gradient(circle 200px at center, transparent 0%, transparent 10%, white 250px);
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center
+}
+.hero__text {
+    position:relative;
+    color: rgb(0, 0, 0);
+    font-size: 6vw;
+    font-family: 'NeueMetanaBold', sans-serif;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.hero__about {
+    position:relative;
+    color: rgb(0, 0, 0);
+    height: 300px;
+    width: 55vw;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(42, 42, 42);
+    text-align: center;
 }

@@ -2,21 +2,26 @@ main{
     /* margin: 70px; */
 }
 
+.portfolio__item_title a {
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+    color:black;
+}
+
 .hero{
     position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     background: radial-gradient(circle at center, rgb(247, 200, 153), rgb(155, 182, 194));
-    /* transition: background 1s linear;  */
+    /* clip-path: polygon(100% 0, 100% 91%, 91% 100%, 0 100%, 0 0); */
 }
 
 .portfolio-title{
     position: relative;
-    z-index: 5;
-    /* padding-left: 10%;
-    padding-right: 100px; */
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
@@ -31,32 +36,72 @@ main{
 }
 
 .portfolio{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-    justify-content: center;
-    gap: 100px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
+    flex-direction: row;
+    width: auto;
+    /* justify-content: center; */
 }
 
-.portfolio__item_title{
-    padding-top: 20px;
-    font-size: 40px;
-    text-align: center;
+.portfolio__wrap{
+    flex: 0 0 100vw; 
+    position:relative;
+    height:100vh;
+    max-height: 100vh;
+    width:100vw;
+    max-width: 100vw;
+    background-color: white;
+    overflow: hidden;
 }
 
 .portfolio__item{
-   
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+    overflow: hidden;
 }
 
+.portfolio__item_title{
+    position: relative;
+    padding-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+    z-index: 10;
+}
+
+
 .portfolio__item-photo{
-    
+    width: 1100px;
+    max-width: 95%;
+    padding-bottom: 2vw;
+    pointer-events: none;
+    overflow: hidden;
 }
 
 .portfolio_item-photo-img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    pointer-events: none;
+    overflow: hidden;
 }    
+
+.MPP{
+    background: linear-gradient(.25turn, rgb(178, 178, 178), 50%, rgb(231, 206, 199))
+}
+
+.IIN{
+    background: linear-gradient(.25turn, rgb(224, 245, 245), 50%, rgb(168, 198, 207))
+}
+
+.Ethel{
+    background: linear-gradient(.25turn, rgb(218, 236, 234), 50%, rgb(108, 129, 131))
+}
+
+.Auza{
+    background: linear-gradient(.25turn, rgb(200, 200, 202), 50%, rgb(179, 185, 215))
+}

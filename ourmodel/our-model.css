@@ -15,37 +15,6 @@ main{
     overflow: hidden;
 }
 
-.hero::after{
-  /* content is required when using :after */
-  content: "";
-  /* The animation */
-  animation: grain 12s steps(10) infinite;
-  /* The grainy image */
-  /* background-image: url("/resources/grain-1.png"); */
-  background-image: url("/resources/black-orchid.png");
-  /* Specify a height and width above and beyond the page header for movement */
-  height: 300%;
-  width: 300%;
-  /* We're using opacity in place of a transparent image */
-  opacity: 0.3;
-  /* We'll need this when the animation kicks in to hold the position of the texture */
-  position: absolute;
-  overflow: hidden;
-}
-
-@keyframes grain {
-    0%, 100% { transform:translate(0, 0) }
-    10% { transform:translate(-5%, -10%) }
-    20% { transform:translate(0%, 5%) }
-    30% { transform:translate(-5%, -25%) }
-    40% { transform:translate(0%, 25%) }
-    50% { transform:translate(-5%, 10%) }
-    60% { transform:translate(0%, 0%) }
-    70% { transform:translate(-5%, 15%) }
-    80% { transform:translate(0%, 10%) }
-    90% { transform:translate(-55%, 10%) }
-  }
-
 .sun-rays{
     position: absolute;
     left:0;
@@ -72,32 +41,70 @@ main{
     /* -webkit-text-stroke: 3px black; */
 }
 
-.our-model{
+.our-model__wrap{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width:70vw;
+    margin:auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.our-model{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .our-model__section{
-    max-width: 50%;
     display: flex;
     flex-direction: column;
+    max-width: 70%;
 }
 
 .our-model__section:nth-child(odd){
     text-align: left; 
     justify-content: flex-start; 
+    margin-right: auto;
 }
 
 .our-model__section:nth-child(even){
     text-align: right; 
     justify-content: flex-end; 
+    margin-left: auto;
 }
 
 .our-model__sub-title{
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 40px;
+    font-size: 65px;
 }
 
+.our-model__text{
+    font-size: 22px;
+}
+
+
+
+.reveal-right{
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 0.7s ease; 
+    transition-delay: 100ms;
+}
+
+.reveal-right.active {
+clip-path: inset(0 0% 0 0); 
+}  
+
+.reveal-left{
+clip-path: inset(0 0 0 100%);
+transition: clip-path 0.7s ease; 
+transition-delay: 100ms;
+}
+
+.reveal-left.active {
+clip-path: inset(0 0 0 0%); 
+}

@@ -36,6 +36,9 @@
     <!-- Page JS -->   
     <script src="/portfolio/portfolio.js" defer></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <title>Portfolio</title>
 
 </head>
@@ -55,13 +58,13 @@
                 <li><a href="/">HOME</a></li>
                 <li><a href="/ourmodel">OUR MODEL</a></li>
                 <li><a href="/portfolio">PORTFOLIO</a></li>
-                <li>CONTACT</li>
+                <li><a href="/contact">CONTACT</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <div class="dimmer"></div>
+    <div class="dimmer --is-brightened"></div>
     
     <!-- Main content -->
     <main>
@@ -71,30 +74,58 @@
             </h1>
         </div>
         <div class = 'portfolio'>
-            <div class = 'portfolio__item'>
-                <div class = 'portfolio__item-photo'>
-                    <img class = 'portfolio_item-photo-img'  src="/resources/mpp-screenshot.png">
-                </div>
-                <div class= 'portfolio__item_title'>
-                    Mindful Peak Performance
-                </div>
-            </div>
-            <div class = 'portfolio__item'>
-                <div class = 'portfolio__item-photo'>
-                    <img class = 'portfolio_item-photo-img' src="/resources/tmi-screenshot.png">
-                </div>
-                <div class='portfolio__item_title'>
-                    Innovations In Mindfulness
+            <div class = 'portfolio__wrap MPP'>
+                <div class = 'portfolio__item'>
+                    <div class= 'portfolio__item_title'>
+                        <a href="https://www.mindfulpeakperformance.com">Mindful Peak Performance</a>
+                    </div>
+                    <div class = 'portfolio__item-photo'>
+                        <!-- <img class = 'portfolio_item-photo-img'  src="/resources/mpp-screenshot.png"> -->
+                        <video autoplay muted loop playsinline class = 'portfolio_item-photo-img'>
+                            <source src="/resources/mpp-clip.mov">
+                        </video>
+                    </div>
                 </div>
             </div>
-            <div class = 'portfolio__item'>
-                <div class = 'portfolio__item-photo'>
-                    <img class = 'portfolio_item-photo-img' src="/resources/auzaaudio-screenshot.png">
-                </div>
-                <div class='portfolio__item_title'>
-                    Auza Audio
+            <div class = 'portfolio__wrap IIN'>
+                <div class = 'portfolio__item'>
+                    <div class='portfolio__item_title'>
+                        <a href="https://www.innovationsinmindfulness.org">Innovations In Mindfulness</a>
+                    </div>
+                    <div class = 'portfolio__item-photo'>
+                        <!-- <img class = 'portfolio_item-photo-img' src="/resources/tmi-screenshot.png"> -->
+                        <video autoplay muted loop playsinline class = 'portfolio_item-photo-img'>
+                            <source src="/resources/iin-clip.mov">
+                        </video>
+                    </div>
                 </div>
             </div>
+            <div class = 'portfolio__wrap Ethel'>   
+                <div class = 'portfolio__item'>
+                    <div class='portfolio__item_title'>
+                        <a href="https://stethelburgas.org">St Ethelburga’s Centre for Reconciliation and Peace</a>
+                    </div>
+                    <div class = 'portfolio__item-photo'>
+                        <!-- <img class = 'portfolio_item-photo-img' src="/resources/auzaaudio-screenshot.png"> -->
+                        <video autoplay muted loop playsinline class = 'portfolio_item-photo-img'>
+                            <source src="/resources/ethel-clip.mov">
+                        </video>
+                    </div>
+                </div>
+            </div>  
+            <div class = 'portfolio__wrap Auza'>   
+                <div class = 'portfolio__item'>
+                    <div class='portfolio__item_title'>
+                        <a href="https://www.auzaaudio.com">Auza Audio</a>
+                    </div>
+                    <div class = 'portfolio__item-photo'>
+                        <!-- <img class = 'portfolio_item-photo-img' src="/resources/auzaaudio-screenshot.png"> -->
+                        <video autoplay muted loop playsinline class = 'portfolio_item-photo-img'>
+                            <source src="/resources/auza-clip.mov">
+                        </video>
+                    </div>
+                </div>
+            </div>   
 
         </div>
 

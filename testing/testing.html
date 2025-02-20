@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP ScrollTrigger Effect</title>
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: #ff5733;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        /* OTHER SECTIONS */
+        .sections {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .section {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            transition: transform 0.5s ease-out;
+        }
+
+        .section-1 { background: #3333ff; }
+        .section-2 { background: #008080; }
+        .section-3 { background: #ffcc00; }
+        .section-4 { background: #8a2be2; }
+        .section-5 { background: #e63946; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Fixed Hero Section -->
+        <div class="hero">Hero Section</div>
+
+        <!-- Main Sections -->
+        <div class="sections">
+            <div class="section section-1">Section 1</div>
+            <div class="section section-2">Section 2</div>
+            <div class="section section-3">Section 3</div>
+            <div class="section section-4">Section 4</div>
+            <div class="section section-5">Section 5</div>
+        </div>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        ScrollTrigger.create({
+            trigger: ".hero",
+            start: "top top",
+            pin: true,
+            pinSpacing: false
+        })
+
+        // // Horizontal Reveal Effect for Sections 2-5
+        // gsap.utils.toArray(".section").forEach((section, index) => {
+        //     if (index === 0) return; // Skip section-1 (it scrolls normally)
+
+        //     gsap.fromTo(section,
+        //         { x: "100%" }, // Start off-screen right
+        //         {
+        //             x: "0%",
+        //             scrollTrigger: {
+        //                 trigger: section,
+        //                 start: "top bottom",
+        //                 end: "top center",
+        //                 scrub: true
+        //             }
+        //         }
+        //     );
+        // });
+    </script>
+
+</body>
+</html>
