@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="643.98242mm"
+   height="421.74582mm"
+   viewBox="0 0 643.98242 421.74582"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
+   sodipodi:docname="home-page-mask.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.2102413"
+     inkscape:cx="1617.1894"
+     inkscape:cy="937.01855"
+     inkscape:window-width="1808"
+     inkscape:window-height="965"
+     inkscape:window-x="80"
+     inkscape:window-y="65"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#feffff;stop-opacity:0;"
+         offset="0.13746665"
+         id="stop1" />
+      <stop
+         style="stop-color:#feffff;stop-opacity:1;"
+         offset="0.74763614"
+         id="stop2" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="radialGradient4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.30070751,0,0,0.28950436,104.98023,134.61766)"
+       cx="144.72456"
+       cy="198.20975"
+       fx="144.72456"
+       fy="198.20975"
+       r="266.7966" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(173.4912,18.872911)">
+    <path
+       id="rect3"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+       d="M -173.4912,-18.872911 V 402.87292 H 470.4912 V -18.872911 Z M 69.074352,115.53387 H 227.92564 V 268.46665 H 69.074352 Z" />
+    <rect
+       style="fill:url(#radialGradient4);stroke-width:0.794;stroke-dasharray:none"
+       id="rect4"
+       width="160.45549"
+       height="154.47748"
+       x="68.272278"
+       y="114.76148" />
+  </g>
+</svg>
