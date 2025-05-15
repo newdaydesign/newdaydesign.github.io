@@ -6,17 +6,17 @@
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.1);
   opacity:0%;
-  transition: opacity 1s, background-color 3s;
+  transition: opacity 1s, background-color 0.5s;
 }
 
 .dimmer.--is-dimmed {
   opacity:100%;
 }
 
-/* .dimmer.--is-brightened {
+.dimmer.--is-brightened {
   opacity:100%;
-  background-color: rgb(255, 255, 255);
-} */
+  background-color: var(--primary-bg);
+}
 
 .logo {
   position: fixed;
@@ -162,7 +162,7 @@
   width: 400px;
   right: 40px;
   top: 19px;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   border-top-right-radius: 20%;
   border-top-left-radius: 8%;
   border-bottom-left-radius: 8%;

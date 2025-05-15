@@ -13,9 +13,9 @@
 }
 
 .home-bg-wrap {
-    position: fixed;
+    position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
 }
 
@@ -60,55 +60,41 @@
       90% { transform:translate(-5%, -5%) }
     }
 
-/* .home-bg__overlay {
+.home-bg__overlay {
+    display:block;
     width: 100%;
     height: 100%;
-    background: rgb(239, 236, 236);
+    background: var(--primary-bg);
     position: absolute;
     z-index: 5;
     top: 0;
     left: 0;
     opacity: 100%;
-    -webkit-mask-image: radial-gradient(circle 200px at center, transparent 0%, transparent 10%, white 250px);
-    mask-image: radial-gradient(circle 200px at center, transparent 0%, transparent 10%, white 250px);
-} */
-
-.home-bg__overlay {
-    width: 100%;
-    height: 100%;
-    /* background: rgb(239, 236, 236); */
-    position: absolute;
-    z-index: 5;
-    /* /* top: 0;
-    left: 0; */
-    opacity: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-    transform: scale(1.2);
-}
-
-.home-bg__image {
-    display: block;
-    width: 150%;
+    
+    --circle-size: 300px;
+    --circle-x: 50%;
+    --circle-y: 50%;
+    background: radial-gradient(
+      circle var(--circle-size) at var(--circle-x) var(--circle-y),
+      transparent 0%, #ffffff calc(var(--circle-size) * 2)
+    );
 }
 
 .hero {
     height: 100vh;
     width: 100vw;
-    position: relative;
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
-    justify-content:baseline;
-    align-items: center
+    justify-content:end;
+    align-items: center;
+    z-index: 6;
 }
 .hero__text {
     position:relative;
     color: rgb(0, 0, 0);
-    padding-top: 250px;
-    font-size: min(10vw, 100px);
+    font-size: 6vw;
     font-family: 'NeueMetanaBold', sans-serif;
     line-height: 1.2;
     text-align: center;
@@ -125,22 +111,113 @@
     text-align: center;
 }
 
-@media (max-width: 1350px) {
-    .hero__text {
-        padding-top: 300px;
-    }
+.thread{
+    width:100vw;
+    position: relative;
+    background: linear-gradient(180deg, #fefefe 0%, #305cde 50% 100%);
+    z-index: 10;
+}
 
-    .hero__about {
-        width: 80vw;
-    }    
+.thread__title{
+    position: absolute;
+    width: 100%;
+    top: -0.5%;
+    left: 2%;
+    display:flex;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.thread__title-heading{
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 600;
+    color: hsl(51, 100%, 40%);
+    /* font-family: 'NeueMetanaBold', sans-serif; */
+    line-height: 1.2;
+    text-align: left;
+    transform:rotate(10deg);
+}
+
+.thead__title-intro{
+    width: 50%;
+    font-size: 25px;
+}
+
+.thread-line{
+    width: 100%;
+    height: 100%;
+    /* background-color:blue; */
+}
+
+.thread-line-path{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    will-change: stroke-dashoffset;
+    transition: stroke-dashoffset 0.15s;
+}
+
+.thread-communication{
+    position:absolute;
+    left: 37%;
+    top: 23%;
+    width: 30%;
+}
+
+.thread-communication__svg{
+    fill:rgb(205, 219, 244);
+}
+
+.thread-postit{
+    position:absolute;
+    left: 35%;
+    top: 50%;
+    width: 20%;
+}   
+
+.thread-postit__svg-bg.--is-first{
+    fill:rgb(220, 212, 179);
+}  
+
+.thread-postit__svg-bg.--is-second{
+    fill:rgb(164, 212, 179);
+}       
+
+.thread-postit__svg-bg.--is-third{
+    fill:rgb(187, 220, 231);
+}       
+
+
+.thread-wireframes{
+    position:absolute;
+    left: 50%;
+    top: 85%;
+    width: 25%;
 }    
 
-@media (max-width: 1000px) {
-    .hero__text {
-        
-    }
+.thread__text-block{
+    position:absolute;
+    font-size: 25px;
+}
 
-    .hero__about {
-        font-size: 20px;
-    }    
-}   
+.thread__text-block.--is-first{
+    left: 15%;
+    top: 10%;
+    width: 40%;
+    text-align: center;
+}
+
+.thread__text-block.--is-second{
+    left: 60%;
+    top: 35%;
+    width: 30%;
+    text-align: right;
+}
+
+.thread__text-block.--is-third{
+    left: 10%;
+    top: 48%;
+    width: 20%;
+    text-align: left;
+}

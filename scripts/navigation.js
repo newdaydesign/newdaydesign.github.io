@@ -119,15 +119,17 @@ navLinks.forEach(link => {
         const url = e.target.href;
   
         AlternateNavMenu();
-        setTimeout(() => {DoNavLogo(); }, 100);
-        navState = NavState.LOGO;
         dimmer.classList.remove("--is-dimmed");
         dimmer.classList.add("--is-brightened");
+
+        setTimeout(() => {DoNavLogo(); }, 100);
+        navState = NavState.LOGO;
+        // dimmer.classList.remove("--is-dimmed");
 
 
         setTimeout(() => {
             window.location.href = url; 
-        }, 350);
+        }, 500);
     });
 });
 

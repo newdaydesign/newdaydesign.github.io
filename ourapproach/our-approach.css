@@ -21,7 +21,7 @@ main{
     top:0;
 }
 
-.our-model-title{
+.our-approach-title{
     position: relative;
     z-index: 5;
     padding-left: 10%;
@@ -41,7 +41,7 @@ main{
     /* -webkit-text-stroke: 3px black; */
 }
 
-.our-model__wrap{
+.our-approach__wrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,38 +52,38 @@ main{
     padding-bottom: 100px;
 }
 
-.our-model{
+.our-approach{
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
-.our-model__section{
+.our-approach__section{
     display: flex;
     flex-direction: column;
     max-width: 70%;
 }
 
-.our-model__section:nth-child(odd){
+.our-approach__section:nth-child(odd){
     text-align: left; 
     justify-content: flex-start; 
     margin-right: auto;
 }
 
-.our-model__section:nth-child(even){
+.our-approach__section:nth-child(even){
     text-align: right; 
     justify-content: flex-end; 
     margin-left: auto;
 }
 
-.our-model__sub-title{
+.our-approach__sub-title{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 65px;
 }
 
-.our-model__text{
+.our-approach__text{
     font-size: 22px;
 }
 

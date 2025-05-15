@@ -1,0 +1,65 @@
+<svg width="85.753mm" height="94mm" version="1.1" viewBox="0 0 85.753 94" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(-18.379 -25.335)">
+   <g class="wireframe-left">
+      <rect x="18.979" y="25.935" width="42.859" height="57.242" fill="#fcf0e6" stroke="#717171" stroke-width="1.2"/>
+      <ellipse cx="30.568" cy="56.988" rx="5.1114" ry="4.859" fill="#aaa"/>
+      <rect x="22.68" y="48.974" width="27.513" height="30.164" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7"/>
+      <path d="m24.699 77.497v-5.3051l5.1952-5.305 3.0614 3.0184 8.8132-8.6892 6.2157 6.1282v10.153h-23.285" fill="#aaa"/>
+      <path d="m22.829 35.218h34.536" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7"/>
+      <g transform="translate(-106.48,26.73)" fill="none" stroke="#aaa">
+         <ellipse cx="161.55" cy="3.7549" rx="2.398" ry="2.3349" stroke-width=".5"/>
+         <path d="m160.48 3.1235h2.1418" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+         <path d="m160.48 4.239h2.1418" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      </g>
+         <rect transform="matrix(.73677 -.67614 .73677 .67614 0 0)" x="-7.1495" y="37.943" width="4.1683" height="4.6637" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".40074"/>
+         <rect transform="matrix(.73677 -.67614 .73677 .67614 0 0)" x="-5.6463" y="39.71" width="4.1683" height="4.6637" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".40074"/>
+         <path d="m23.587 40.126h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+         <path d="m23.587 42.357h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+         <path d="m23.587 44.945h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+   </g>
+   <g class="wireframe-middle" transform="translate(-32.208 34.368)">
+      <rect x="72.034" y="9.3461" width="42.859" height="57.242" fill="#fcf0e6" stroke="#717171" stroke-width="1.2"/>
+      <path d="m76.642 16.251h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m76.642 18.715h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m76.642 21.178h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m76.642 23.641h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m76.642 26.104h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m76.642 28.567h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <rect x="76.725" y="31.496" width="33.109" height="18.919" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7"/>
+      <rect x="79.792" y="36.063" width="26.975" height="9.5085" ry="4.7542" fill="#fcf0e6" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7"/>
+      <rect x="76.942" y="58.225" width="13.528" height="4.2466" ry="2.1233" fill="#fcf0e6" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7"/>
+      <path d="m80.41 60.394h7.185" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+   </g>
+   <g class="wireframe-right" transform="translate(-47.887 -3.7689)">
+      <path d="m111.65 93.758h17.107" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m116.93 96.497h11.836" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m121.58 99.235h7.185" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m126.07 101.97h2.6892" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <rect x="108.56" y="65.262" width="42.859" height="57.242" fill="#fcf0e6" stroke="#717171" stroke-width="1.2"/>
+      <g transform="matrix(.61468 0 0 .61925 .78179 64.944)" stroke-width="1.6208">
+         <ellipse cx="189.25" cy="30.89" rx="5.1114" ry="4.859" fill="#aaa"/>
+         <rect x="181.36" y="22.875" width="27.513" height="30.164" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1346"/>
+         <path d="m183.38 51.399v-5.3051l5.1952-5.305 3.0614 3.0184 8.8132-8.6892 6.2157 6.1282v10.153h-23.285" fill="#aaa"/>
+      </g>
+      <g transform="translate(-16.899 66.057)" fill="#ababab">
+         <ellipse cx="163.12" cy="3.8811" rx="1.7038" ry="1.5776"/>
+         <ellipse cx="163.12" cy="8.1721" rx="1.7038" ry="1.5776"/>
+         <ellipse cx="163.12" cy="12.463" rx="1.7038" ry="1.5776"/>
+      </g>
+      <rect transform="matrix(.73677 -.67614 .73677 .67614 0 0)" x="24.562" y="127.82" width="4.1683" height="4.6637" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".40074"/>
+      <rect transform="matrix(.73677 -.67614 .73677 .67614 0 0)" x="26.065" y="129.59" width="4.1683" height="4.6637" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".40074"/>
+      <path d="m113.17 111.28h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m113.17 114.23h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m113.17 117.18h33.643" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <g transform="matrix(.61468 0 0 .61925 19.683 72.887)" stroke-width="1.6208">
+         <ellipse cx="189.25" cy="30.89" rx="5.1114" ry="4.859" fill="#aaa"/>
+         <rect x="181.36" y="22.875" width="27.513" height="30.164" fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1346"/>
+         <path d="m183.38 51.399v-5.3051l5.1952-5.305 3.0614 3.0184 8.8132-8.6892 6.2157 6.1282v10.153h-23.285" fill="#aaa"/>
+      </g>
+      <path d="m113.04 108.32h12.399" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m113.04 105.37h12.399" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+      <path d="m113.04 102.42h12.399" fill="#aaa" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"/>
+   </g>
+</g>
+</svg>
+
